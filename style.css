@@ -1440,6 +1440,21 @@ footer {
     position: static;
     margin-top: 48px;
   }
+  @media (max-width: 768px) {
+    .hero-stats {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .stat-divider {
+      display: none;
+    }
+
+    .stat {
+      width: 100%;
+      text-align: center;
+    }
+  }
 
   .business-card {
     grid-template-columns: 1fr;
