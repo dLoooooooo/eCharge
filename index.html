@@ -1,0 +1,1443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="eCharge Moldova — Fast, smart, and reliable EV charging stations across Moldova."
+    />
+    <title>eCharge Moldova — Powering the Future of Electric Mobility</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================================================
+       PAGE LOADER
+  ================================================ -->
+    <div id="loader" aria-hidden="true">
+      <div class="loader-logo">e<span>Charge</span></div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <nav id="navbar">
+      <a
+        href="#hero"
+        class="nav-logo"
+        aria-label="eCharge Moldova — back to top"
+      >
+        e<span>Charge</span> Moldova
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#products" class="mobile-link">Products</a>
+      <a href="#how" class="mobile-link">How It Works</a>
+      <a href="#business" class="mobile-link">Business</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- ================================================
+       HERO SECTION
+  ================================================ -->
+    <section id="hero">
+      <!-- Background layers -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb--teal"></div>
+        <div class="hero-orb hero-orb--blue"></div>
+      </div>
+
+      <!-- Main content -->
+      <div class="hero-content">
+        <div class="pill-badge">
+          <span class="pill-dot" aria-hidden="true"></span>
+          Moldova's #1 EV Charging Network
+        </div>
+
+        <h1 class="hero-title">
+          Powering the<br />
+          <span class="gradient-text">Future of Electric</span><br />
+          Mobility
+        </h1>
+
+        <p class="hero-subtitle">
+          Fast, smart, and reliable EV charging stations across Moldova. Drive
+          further, charge smarter — infrastructure built for tomorrow.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Find a Station
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Request a Charger
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Charger illustration -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 560 500" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#34d399" />
+              <stop offset="100%" stop-color="#38bdf8" />
+            </linearGradient>
+            <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0f2035" />
+              <stop offset="100%" stop-color="#071525" />
+            </linearGradient>
+            <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0a1e32" />
+              <stop offset="100%" stop-color="#060f1c" />
+            </linearGradient>
+          </defs>
+
+          <!-- Ground shadow -->
+          <ellipse
+            cx="210"
+            cy="478"
+            rx="120"
+            ry="10"
+            fill="rgba(52,211,153,0.07)"
+          />
+
+          <!-- Station body -->
+          <rect
+            x="90"
+            y="55"
+            width="240"
+            height="390"
+            rx="18"
+            fill="url(#bodyGrad)"
+            stroke="rgba(52,211,153,0.18)"
+            stroke-width="1.5"
+          />
+
+          <!-- Left accent bar -->
+          <rect
+            x="90"
+            y="55"
+            width="7"
+            height="390"
+            rx="3.5"
+            fill="url(#accentGrad)"
+            opacity="0.8"
+          />
+
+          <!-- Top cap -->
+          <rect
+            x="82"
+            y="44"
+            width="256"
+            height="26"
+            rx="13"
+            fill="#0d1f33"
+            stroke="rgba(52,211,153,0.12)"
+            stroke-width="1"
+          />
+
+          <!-- Screen -->
+          <rect
+            x="118"
+            y="92"
+            width="184"
+            height="148"
+            rx="10"
+            fill="url(#screenGrad)"
+            stroke="rgba(56,189,248,0.25)"
+            stroke-width="1"
+          />
+
+          <!-- Screen — bolt -->
+          <text
+            x="210"
+            y="170"
+            font-size="64"
+            text-anchor="middle"
+            fill="url(#accentGrad)"
+            opacity="0.9"
+          >
+            ⚡
+          </text>
+          <!-- Screen — status text -->
+          <text
+            x="210"
+            y="210"
+            font-size="11"
+            text-anchor="middle"
+            fill="rgba(52,211,153,0.55)"
+            font-family="monospace"
+            letter-spacing="2"
+          >
+            150 kW · ACTIVE
+          </text>
+
+          <!-- Divider -->
+          <line
+            x1="118"
+            y1="260"
+            x2="302"
+            y2="260"
+            stroke="rgba(255,255,255,0.05)"
+            stroke-width="1"
+          />
+
+          <!-- Status rows -->
+          <circle cx="134" cy="280" r="5" fill="#34d399" opacity="0.85">
+            <animate
+              attributeName="opacity"
+              values="0.85;0.3;0.85"
+              dur="2s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <text
+            x="148"
+            y="284"
+            font-size="10"
+            fill="rgba(52,211,153,0.55)"
+            font-family="monospace"
+          >
+            CHARGING
+          </text>
+
+          <circle cx="134" cy="300" r="5" fill="rgba(56,189,248,0.5)" />
+          <text
+            x="148"
+            y="304"
+            font-size="10"
+            fill="rgba(148,163,184,0.5)"
+            font-family="monospace"
+          >
+            READY
+          </text>
+
+          <!-- Connector bay -->
+          <rect
+            x="128"
+            y="324"
+            width="164"
+            height="68"
+            rx="8"
+            fill="#060e1a"
+            stroke="rgba(52,211,153,0.08)"
+            stroke-width="1"
+          />
+          <!-- DC port -->
+          <rect
+            x="142"
+            y="336"
+            width="64"
+            height="42"
+            rx="6"
+            fill="#0a1e32"
+            stroke="rgba(56,189,248,0.22)"
+            stroke-width="1"
+          />
+          <text
+            x="174"
+            y="363"
+            font-size="11"
+            text-anchor="middle"
+            fill="rgba(56,189,248,0.6)"
+            font-family="monospace"
+          >
+            DC
+          </text>
+          <!-- AC port -->
+          <rect
+            x="218"
+            y="336"
+            width="60"
+            height="42"
+            rx="6"
+            fill="#0a1e32"
+            stroke="rgba(52,211,153,0.15)"
+            stroke-width="1"
+          />
+          <text
+            x="248"
+            y="363"
+            font-size="11"
+            text-anchor="middle"
+            fill="rgba(52,211,153,0.5)"
+            font-family="monospace"
+          >
+            AC
+          </text>
+
+          <!-- Cable -->
+          <path
+            d="M155 392 Q96 430 78 465"
+            stroke="rgba(52,211,153,0.45)"
+            stroke-width="7"
+            fill="none"
+            stroke-linecap="round"
+          />
+          <circle
+            cx="78"
+            cy="465"
+            r="9"
+            fill="rgba(52,211,153,0.7)"
+            stroke="rgba(52,211,153,0.3)"
+            stroke-width="2"
+          />
+
+          <!-- Brand label -->
+          <text
+            x="210"
+            y="436"
+            font-size="11"
+            text-anchor="middle"
+            fill="rgba(255,255,255,0.1)"
+            font-family="monospace"
+            letter-spacing="4"
+          >
+            eCHARGE MD
+          </text>
+
+          <!-- Decorative orbit ring (right side) -->
+          <circle
+            cx="450"
+            cy="130"
+            r="58"
+            fill="none"
+            stroke="rgba(52,211,153,0.07)"
+            stroke-width="1"
+            stroke-dasharray="5 5"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 450 130"
+              to="360 450 130"
+              dur="25s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle
+            cx="450"
+            cy="130"
+            r="36"
+            fill="none"
+            stroke="rgba(56,189,248,0.09)"
+            stroke-width="1"
+            stroke-dasharray="3 7"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="360 450 130"
+              to="0 450 130"
+              dur="18s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle
+            cx="450"
+            cy="130"
+            r="16"
+            fill="rgba(52,211,153,0.06)"
+            stroke="rgba(52,211,153,0.2)"
+            stroke-width="1"
+          />
+          <text
+            x="450"
+            y="135"
+            font-size="12"
+            text-anchor="middle"
+            fill="rgba(52,211,153,0.7)"
+          >
+            ⚡
+          </text>
+
+          <!-- Connection line from ring to station -->
+          <line
+            x1="414"
+            y1="130"
+            x2="358"
+            y2="130"
+            stroke="rgba(52,211,153,0.12)"
+            stroke-width="1"
+            stroke-dasharray="4 4"
+          />
+          <circle cx="414" cy="130" r="3" fill="rgba(52,211,153,0.35)" />
+
+          <!-- Secondary orbit (lower) -->
+          <circle
+            cx="470"
+            cy="300"
+            r="28"
+            fill="rgba(56,189,248,0.04)"
+            stroke="rgba(56,189,248,0.12)"
+            stroke-width="1"
+          />
+          <text x="470" y="306" font-size="16" text-anchor="middle">📡</text>
+        </svg>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats">
+        <div class="stat reveal">
+          <strong>80<span class="stat-accent">+</span></strong>
+          <span>Active Stations</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat reveal reveal-d1">
+          <strong>150<span class="stat-accent">kW</span></strong>
+          <span>Max Charge Power</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat reveal reveal-d2">
+          <strong>99<span class="stat-accent">%</span></strong>
+          <span>Network Uptime</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       FEATURES SECTION
+  ================================================ -->
+    <section id="features">
+      <div class="section-header section-header--center reveal">
+        <div class="pill-badge pill-badge--subtle">Why eCharge</div>
+        <h2 class="section-title">Built for the Electric Era</h2>
+        <p class="section-subtitle">
+          Every station and service is designed with one goal: making EV
+          charging effortless, fast, and accessible across Moldova.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon" aria-hidden="true">⚡</div>
+          <h3>Ultra-Fast Charging</h3>
+          <p>
+            DC fast chargers up to 150 kW add 100 km of range in under 15
+            minutes — so you're always ready for the road ahead.
+          </p>
+        </article>
+
+        <article class="feature-card reveal reveal-d1">
+          <div class="feature-icon" aria-hidden="true">📱</div>
+          <h3>Smart App Control</h3>
+          <p>
+            Monitor sessions, reserve a spot, and pay seamlessly from our
+            intuitive mobile app. Full control, zero friction.
+          </p>
+        </article>
+
+        <article class="feature-card reveal reveal-d2">
+          <div class="feature-icon" aria-hidden="true">🛡️</div>
+          <h3>99.9% Uptime</h3>
+          <p>
+            Remote monitoring and rapid-response maintenance keep our network
+            online when you need it. Reliability you can count on.
+          </p>
+        </article>
+
+        <article class="feature-card reveal reveal-d3">
+          <div class="feature-icon" aria-hidden="true">🌍</div>
+          <h3>100% Green Energy</h3>
+          <p>
+            Every kilowatt comes from certified renewable sources. Charge your
+            car and protect the planet — without compromise.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================
+       PRODUCTS SECTION
+       TO ADD MORE PRODUCTS: duplicate any .product-card
+       article below. The grid adjusts automatically.
+  ================================================ -->
+    <section id="products">
+      <div class="section-header section-header--center reveal">
+        <div class="pill-badge pill-badge--subtle">Our Products</div>
+        <h2 class="section-title">A Charger for Every Need</h2>
+        <p class="section-subtitle">
+          From home wallboxes to highway DC fast chargers — hardware that fits
+          your lifestyle and your business.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1: HomeCharge Pro -->
+        <article class="product-card reveal">
+          <div class="product-visual">
+            <span class="product-badge">Residential</span>
+            <div class="product-icon-wrap">
+              <svg
+                viewBox="0 0 100 140"
+                width="72"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="18"
+                  y="8"
+                  width="64"
+                  height="118"
+                  rx="10"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.25)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="26"
+                  y="20"
+                  width="48"
+                  height="56"
+                  rx="6"
+                  fill="#060f1c"
+                  stroke="rgba(56,189,248,0.18)"
+                  stroke-width="1"
+                />
+                <text
+                  x="50"
+                  y="56"
+                  font-size="28"
+                  text-anchor="middle"
+                  fill="url(#accentGrad)"
+                >
+                  ⚡
+                </text>
+                <text
+                  x="50"
+                  y="70"
+                  font-size="7"
+                  text-anchor="middle"
+                  fill="rgba(52,211,153,0.5)"
+                  font-family="monospace"
+                >
+                  7.4 kW
+                </text>
+                <rect
+                  x="30"
+                  y="88"
+                  width="40"
+                  height="18"
+                  rx="4"
+                  fill="#0a1a2e"
+                  stroke="rgba(52,211,153,0.12)"
+                />
+                <line
+                  x1="50"
+                  y1="126"
+                  x2="50"
+                  y2="140"
+                  stroke="rgba(52,211,153,0.35)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-power">⚡ 7.4 kW AC</p>
+            <h3 class="product-name">HomeCharge Pro</h3>
+            <p class="product-desc">
+              Elegant home wallbox with smart scheduling, solar integration, and
+              app control. Charges overnight while you sleep.
+            </p>
+            <div class="product-footer">
+              <div class="product-price">
+                €890
+                <small>incl. installation</small>
+              </div>
+              <a href="#contact" class="btn btn-primary product-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: ParkCharge Twin -->
+        <article class="product-card reveal reveal-d1">
+          <div class="product-visual">
+            <span class="product-badge">Commercial</span>
+            <div class="product-icon-wrap">
+              <svg
+                viewBox="0 0 110 150"
+                width="80"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="15"
+                  y="6"
+                  width="80"
+                  height="132"
+                  rx="12"
+                  fill="#0d1f33"
+                  stroke="rgba(56,189,248,0.25)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="24"
+                  y="18"
+                  width="62"
+                  height="64"
+                  rx="7"
+                  fill="#060f1c"
+                  stroke="rgba(52,211,153,0.18)"
+                  stroke-width="1"
+                />
+                <text
+                  x="55"
+                  y="57"
+                  font-size="32"
+                  text-anchor="middle"
+                  fill="url(#accentGrad)"
+                >
+                  ⚡
+                </text>
+                <text
+                  x="55"
+                  y="76"
+                  font-size="7.5"
+                  text-anchor="middle"
+                  fill="rgba(56,189,248,0.55)"
+                  font-family="monospace"
+                >
+                  22 kW
+                </text>
+                <rect
+                  x="26"
+                  y="96"
+                  width="24"
+                  height="28"
+                  rx="5"
+                  fill="#0a1a2e"
+                  stroke="rgba(52,211,153,0.18)"
+                />
+                <rect
+                  x="60"
+                  y="96"
+                  width="24"
+                  height="28"
+                  rx="5"
+                  fill="#0a1a2e"
+                  stroke="rgba(56,189,248,0.18)"
+                />
+                <line
+                  x1="38"
+                  y1="124"
+                  x2="38"
+                  y2="148"
+                  stroke="rgba(52,211,153,0.35)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="72"
+                  y1="124"
+                  x2="72"
+                  y2="148"
+                  stroke="rgba(56,189,248,0.35)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-power">⚡ 22 kW AC</p>
+            <h3 class="product-name">ParkCharge Twin</h3>
+            <p class="product-desc">
+              Dual-port AC charger for parking lots, hotels, and offices.
+              Charges two vehicles simultaneously with RFID access and
+              analytics.
+            </p>
+            <div class="product-footer">
+              <div class="product-price">
+                €1,490
+                <small>excl. installation</small>
+              </div>
+              <a href="#contact" class="btn btn-primary product-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: FastCharge Ultra -->
+        <article class="product-card reveal reveal-d2">
+          <div class="product-visual">
+            <span class="product-badge product-badge--accent">DC Fast</span>
+            <div class="product-icon-wrap">
+              <svg
+                viewBox="0 0 130 170"
+                width="90"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="22"
+                  y="6"
+                  width="86"
+                  height="148"
+                  rx="14"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.3)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="10"
+                  y="6"
+                  width="14"
+                  height="148"
+                  rx="7"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.15)"
+                />
+                <rect
+                  x="32"
+                  y="18"
+                  width="66"
+                  height="74"
+                  rx="8"
+                  fill="#060f1c"
+                  stroke="rgba(52,211,153,0.2)"
+                />
+                <text
+                  x="65"
+                  y="64"
+                  font-size="40"
+                  text-anchor="middle"
+                  fill="url(#accentGrad)"
+                >
+                  ⚡
+                </text>
+                <text
+                  x="65"
+                  y="84"
+                  font-size="8"
+                  text-anchor="middle"
+                  fill="rgba(52,211,153,0.55)"
+                  font-family="monospace"
+                >
+                  150 kW
+                </text>
+                <rect
+                  x="34"
+                  y="106"
+                  width="62"
+                  height="28"
+                  rx="6"
+                  fill="#060f1c"
+                  stroke="rgba(56,189,248,0.18)"
+                />
+                <text
+                  x="65"
+                  y="125"
+                  font-size="10"
+                  text-anchor="middle"
+                  fill="rgba(56,189,248,0.6)"
+                  font-family="monospace"
+                >
+                  DC FAST
+                </text>
+                <line
+                  x1="46"
+                  y1="154"
+                  x2="30"
+                  y2="174"
+                  stroke="rgba(52,211,153,0.45)"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <circle cx="30" cy="174" r="7" fill="rgba(52,211,153,0.65)" />
+              </svg>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-power">⚡ 150 kW DC</p>
+            <h3 class="product-name">FastCharge Ultra</h3>
+            <p class="product-desc">
+              Industry-leading DC fast charger. Adds 100 km in 10 minutes. Built
+              for highway corridors, fleet operators, and high-traffic sites.
+            </p>
+            <div class="product-footer">
+              <div class="product-price">
+                Custom
+                <small>request a quote</small>
+              </div>
+              <a href="#contact" class="btn btn-ghost product-btn"
+                >Request Offer</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: MobileCharge Go -->
+        <article class="product-card reveal reveal-d3">
+          <div class="product-visual">
+            <span class="product-badge">Portable</span>
+            <div class="product-icon-wrap">
+              <svg
+                viewBox="0 0 110 130"
+                width="76"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="20"
+                  y="8"
+                  width="70"
+                  height="90"
+                  rx="16"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.22)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="34"
+                  y="20"
+                  width="42"
+                  height="52"
+                  rx="8"
+                  fill="#060f1c"
+                  stroke="rgba(52,211,153,0.15)"
+                />
+                <text
+                  x="55"
+                  y="52"
+                  font-size="28"
+                  text-anchor="middle"
+                  fill="url(#accentGrad)"
+                >
+                  ⚡
+                </text>
+                <text
+                  x="55"
+                  y="66"
+                  font-size="7"
+                  text-anchor="middle"
+                  fill="rgba(52,211,153,0.5)"
+                  font-family="monospace"
+                >
+                  3.6 kW
+                </text>
+                <path
+                  d="M34 98 Q34 118 55 118 Q76 118 76 98"
+                  stroke="rgba(52,211,153,0.38)"
+                  stroke-width="4"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="55"
+                  cy="118"
+                  r="7"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.4)"
+                  stroke-width="2"
+                />
+                <line
+                  x1="52"
+                  y1="118"
+                  x2="52"
+                  y2="126"
+                  stroke="rgba(52,211,153,0.4)"
+                  stroke-width="2"
+                />
+                <line
+                  x1="58"
+                  y1="118"
+                  x2="58"
+                  y2="126"
+                  stroke="rgba(52,211,153,0.4)"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-power">⚡ 3.6 kW AC</p>
+            <h3 class="product-name">MobileCharge Go</h3>
+            <p class="product-desc">
+              Compact portable charger for any Schuko outlet. Perfect for
+              travel, emergencies, and EV drivers without a dedicated home
+              charger.
+            </p>
+            <div class="product-footer">
+              <div class="product-price">
+                €290
+                <small>free shipping</small>
+              </div>
+              <a href="#contact" class="btn btn-primary product-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: MobileCharge Go -->
+        <article class="product-card reveal reveal-d3">
+          <div class="product-visual">
+            <span class="product-badge">Portable</span>
+            <div class="product-icon-wrap">
+              <svg
+                viewBox="0 0 110 130"
+                width="76"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="20"
+                  y="8"
+                  width="70"
+                  height="90"
+                  rx="16"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.22)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="34"
+                  y="20"
+                  width="42"
+                  height="52"
+                  rx="8"
+                  fill="#060f1c"
+                  stroke="rgba(52,211,153,0.15)"
+                />
+                <text
+                  x="55"
+                  y="52"
+                  font-size="28"
+                  text-anchor="middle"
+                  fill="url(#accentGrad)"
+                >
+                  ⚡
+                </text>
+                <text
+                  x="55"
+                  y="66"
+                  font-size="7"
+                  text-anchor="middle"
+                  fill="rgba(52,211,153,0.5)"
+                  font-family="monospace"
+                >
+                  3.6 kW
+                </text>
+                <path
+                  d="M34 98 Q34 118 55 118 Q76 118 76 98"
+                  stroke="rgba(52,211,153,0.38)"
+                  stroke-width="4"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <circle
+                  cx="55"
+                  cy="118"
+                  r="7"
+                  fill="#0d1f33"
+                  stroke="rgba(52,211,153,0.4)"
+                  stroke-width="2"
+                />
+                <line
+                  x1="52"
+                  y1="118"
+                  x2="52"
+                  y2="126"
+                  stroke="rgba(52,211,153,0.4)"
+                  stroke-width="2"
+                />
+                <line
+                  x1="58"
+                  y1="118"
+                  x2="58"
+                  y2="126"
+                  stroke="rgba(52,211,153,0.4)"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="product-body">
+            <p class="product-power">⚡ 3.6 kW AC</p>
+            <h3 class="product-name">MobileCharge Go</h3>
+            <p class="product-desc">
+              Compact portable charger for any Schuko outlet. Perfect for
+              travel, emergencies, and EV drivers without a dedicated home
+              charger.
+            </p>
+            <div class="product-footer">
+              <div class="product-price">
+                €290
+                <small>free shipping</small>
+              </div>
+              <a href="#contact" class="btn btn-primary product-btn"
+                >Order Now</a
+              >
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- /products-grid -->
+    </section>
+
+    <!-- ================================================
+       HOW IT WORKS
+  ================================================ -->
+    <section id="how">
+      <div class="section-header section-header--center reveal">
+        <div class="pill-badge pill-badge--subtle">Simple Process</div>
+        <h2 class="section-title">Charge in 4 Easy Steps</h2>
+        <p class="section-subtitle">
+          Our network is designed for maximum simplicity — no cards, no
+          confusion, just clean and fast charging.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <span class="step-number" aria-hidden="true">01</span>
+          <div class="step-icon" aria-hidden="true">📍</div>
+          <h3>Find a Station</h3>
+          <p>
+            Use our app or map to locate the nearest eCharge station. Filter by
+            speed, availability, and connector type.
+          </p>
+        </article>
+
+        <article class="step-card reveal reveal-d1">
+          <span class="step-number" aria-hidden="true">02</span>
+          <div class="step-icon" aria-hidden="true">🔌</div>
+          <h3>Connect</h3>
+          <p>
+            Plug in your cable. The station recognizes your vehicle
+            automatically via RFID or a quick QR scan.
+          </p>
+        </article>
+
+        <article class="step-card reveal reveal-d2">
+          <span class="step-number" aria-hidden="true">03</span>
+          <div class="step-icon" aria-hidden="true">⚡</div>
+          <h3>Charge</h3>
+          <p>
+            Power flows instantly. Monitor real-time kW, energy delivered, and
+            estimated completion on your phone.
+          </p>
+        </article>
+
+        <article class="step-card reveal reveal-d3">
+          <span class="step-number" aria-hidden="true">04</span>
+          <div class="step-icon" aria-hidden="true">💳</div>
+          <h3>Pay & Go</h3>
+          <p>
+            Automatic billing via app — or tap your card on the terminal.
+            Receipt sent instantly. Drive on.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================
+       BUSINESS / CTA SECTION
+  ================================================ -->
+    <section id="business">
+      <div class="business-card reveal">
+        <div class="business-content">
+          <div class="pill-badge">For Businesses</div>
+          <h2 class="section-title">
+            Turn Your Parking Into a<br />
+            <span class="gradient-text">Revenue Stream</span>
+          </h2>
+          <p class="section-subtitle" style="max-width: 440px">
+            Hotels, restaurants, malls, and offices are installing eCharge
+            stations to attract EV drivers, earn passive income, and hit
+            sustainability targets. We handle everything.
+          </p>
+
+          <ul class="biz-perks" aria-label="Business benefits">
+            <li class="biz-perk">
+              <div class="biz-perk-icon" aria-hidden="true">💰</div>
+              <div>
+                <strong>Earn Revenue</strong>
+                <span
+                  >Set your own tariff and collect income from every
+                  session</span
+                >
+              </div>
+            </li>
+            <li class="biz-perk">
+              <div class="biz-perk-icon" aria-hidden="true">🔧</div>
+              <div>
+                <strong>Zero Maintenance</strong>
+                <span
+                  >Our team handles all upkeep and 24/7 remote monitoring</span
+                >
+              </div>
+            </li>
+            <li class="biz-perk">
+              <div class="biz-perk-icon" aria-hidden="true">📊</div>
+              <div>
+                <strong>Business Dashboard</strong>
+                <span
+                  >Real-time analytics, usage reports, and billing in one
+                  place</span
+                >
+              </div>
+            </li>
+            <li class="biz-perk">
+              <div class="biz-perk-icon" aria-hidden="true">🌿</div>
+              <div>
+                <strong>ESG Reporting</strong>
+                <span
+                  >Certified carbon offset reports for your sustainability
+                  goals</span
+                >
+              </div>
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">
+            Talk to Our Team
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="business-visual" aria-hidden="true">
+          <div class="biz-emoji">🏢</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       CONTACT SECTION
+  ================================================ -->
+    <section id="contact">
+      <div class="contact-layout">
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <div class="pill-badge pill-badge--subtle">Get In Touch</div>
+          <h2 class="section-title">Let's Power<br />Your Future</h2>
+          <p>
+            Whether you're a homeowner, business, or municipality — we have the
+            right charging solution. Fill out the form and our team will reach
+            out within 24 hours.
+          </p>
+
+          <address class="contact-details">
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div>
+                <strong>Address</strong>
+                <span>Strada Mihai Eminescu 45, Chișinău, Moldova</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <span>+373 22 123 456</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <span>hello@echarge.md</span>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">🕐</div>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon–Fri, 09:00–18:00</span>
+              </div>
+            </div>
+          </address>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-card reveal reveal-d1">
+          <!--
+          ╔══════════════════════════════════════════════════╗
+          ║           EMAILJS SETUP INSTRUCTIONS             ║
+          ╠══════════════════════════════════════════════════╣
+          ║  1. Create a free account at emailjs.com         ║
+          ║  2. Add Email Service (Gmail) → copy SERVICE ID  ║
+          ║  3. Create Email Template → copy TEMPLATE ID     ║
+          ║     Template variables used:                     ║
+          ║       {{from_name}}  {{from_email}}              ║
+          ║       {{phone}}  {{request_type}}  {{message}}   ║
+          ║  4. Account → API Keys → copy PUBLIC KEY         ║
+          ║  5. Paste all three values in script.js          ║
+          ║     where marked with  ← INSERT HERE             ║
+          ╚══════════════════════════════════════════════════╝
+        -->
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname"
+                  >Full Name <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="fname"
+                  name="from_name"
+                  placeholder="Ion Popescu"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="femail"
+                  >Email Address <span aria-hidden="true">*</span></label
+                >
+                <input
+                  type="email"
+                  id="femail"
+                  name="from_email"
+                  placeholder="ion@example.md"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="fphone"
+                  name="phone"
+                  placeholder="+373 79 000 000"
+                />
+              </div>
+              <div class="form-group">
+                <label for="ftype"
+                  >Request Type <span aria-hidden="true">*</span></label
+                >
+                <select id="ftype" name="request_type" required>
+                  <option value="" disabled selected>Select a type…</option>
+                  <option>Home Charger Installation</option>
+                  <option>Business / Commercial Charger</option>
+                  <option>Product Information</option>
+                  <option>Technical Support</option>
+                  <option>Partnership Inquiry</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fmessage"
+                >Message <span aria-hidden="true">*</span></label
+              >
+              <textarea
+                id="fmessage"
+                name="message"
+                placeholder="Tell us about your project or question…"
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary form-submit-btn"
+              id="submitBtn"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+              >
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              <span id="submitLabel">Send Message</span>
+            </button>
+
+            <!-- Success / Error feedback -->
+            <div
+              id="formFeedback"
+              class="form-feedback"
+              role="alert"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       FOOTER
+  ================================================ -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">e<span>Charge</span> Moldova</div>
+          <p>
+            Building Moldova's most reliable and intelligent EV charging network
+            — fast, green, and accessible for everyone.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" class="social-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="social-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Telegram" class="social-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.8 3L1 11.6c-1.4.6-1.4 1.4 0 1.8l5 1.6 1.8 5.6c.4 1.2 1 1.4 1.8.8l3-2.8 5.4 4c1 .6 1.8.2 2-1l3.2-15.2c.4-1.8-.6-2.4-1.4-2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Company links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#features">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#business">For Business</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Solutions links">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#">Home Charging</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Fleet Charging</a></li>
+            <li><a href="#">Public Network</a></li>
+            <li><a href="#">Roaming</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="Support links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Installation Guide</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 <span>eCharge Moldova</span>. All rights reserved.</p>
+        <p>Made with <span>⚡</span> in Moldova</p>
+      </div>
+    </footer>
+
+    <!-- Main script -->
+    <script src="script.js"></script>
+  </body>
+</html>
